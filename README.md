@@ -37,54 +37,26 @@ Ensure you have the following installed:
    ```bash
    git clone https://github.com/your-username/backend-assignment.git
    cd backend-assignment
-   Install dependencies:
-   ```
-
-bash
-Copy code
+2. Install dependencies:
+```bash
 npm install
-Set up environment variables:
+```
+3. Set up environment variables:
 
 Create a .env file in the root of the project and add the following:
 
-env
-Copy code
+```.env
+
 DB_URI=mongodb://localhost:27017/worko
 SECRET_KEY=your_jwt_secret_key
 PORT=5000
-Run the application:
+```
+4. Run the application:
 
-bash
-Copy code
+```bash
 npm start
-Project Structure
-lua
-Copy code
-backend-assignment/
-├── controllers/
-│ └── userController.js
-├── services/
-│ └── userService.js
-├── daos/
-│ └── userDao.js
-├── models/
-│ └── userModel.js
-├── dtos/
-│ └── userDto.js
-├── routes/
-│ └── userRoutes.js
-├── middleware/
-│ └── authMiddleware.js
-│ └── validatorMiddleware.js
-├── config/
-│ └── db.js
-├── tests/
-│ └── user.test.js
-├── .env
-├── .gitignore
-├── app.js
-├── package.json
-└── webpack.config.js
+```
+5.
 API Endpoints
 GET /worko/user: List all users.
 GET /worko/user/:userId: Get user details by ID.

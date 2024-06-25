@@ -59,13 +59,20 @@ npm start
 5.
 API Endpoints
 GET /worko/user: List all users.
+
 GET /worko/user/:userId: Get user details by ID.
+
 POST /worko/user: Create a new user.
+
 PUT /worko/user/:userId: Update a user.
+
 PATCH /worko/user/:userId: Partially update a user.
+
 DELETE /worko/user/:userId: Soft delete a user.
+
 Required Payload for User
-json
+
+```json
 Copy code
 {
 "email": "string",
@@ -74,24 +81,37 @@ Copy code
 "city": "string",
 "zipCode": "string"
 }
-Field Validation
+```
+6. Field Validation:
+
 Email: Must be a valid email format.
+
 Zip Code: Must be a valid string.
+
 Id: Must be present in POST, PUT, DELETE requests.
-Authentication
+
+7. Authentication:
 All API endpoints are protected and require a valid JWT token in the Authorization header in the format Bearer <token>.
 
-Running Tests
+
+8. Running Tests:
 To run the tests, use:
 
-bash
+```bash
 Copy code
 npm test
+```
 Environment Variables
 The following environment variables are used in the project:
 
 DB_URI: MongoDB connection string.
+
 SECRET_KEY: Secret key for JWT.
+
 PORT: Port number for the server.
-License
+
+
+License:
+
 This project is licensed under the MIT License.
+
